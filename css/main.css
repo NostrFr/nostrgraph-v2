@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Mono", monospace;
+  background: #fff;
+  color: #000;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+#identity-input {
+  width: 320px;
+  padding: 0.4rem;
+  border: 1px solid #000;
+  font-family: inherit;
+}
+
+button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+#status-msg {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+canvas {
+  border: 1px solid #000;
+  display: block;
+  margin-top: 1rem;
+}
+
+.node-info {
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  border: 1px solid #000;
+  background: #fff;
+  font-family: monospace;
+  display: none;
+}
+
+.legend {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+  background: #fff;
+  font-family: monospace;
+  display: none;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border: 1px solid #000;
+}
