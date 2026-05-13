@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>NostrGraph v2</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main>
+    <h1>NostrGraph v2</h1>
+
+    <section>
+      <label for="identity-input">Identité Nostr (npub ou hex) :</label>
+      <input id="identity-input" type="text" placeholder="npub1..." />
+      <button id="explore-btn">Explorer le graphe</button>
+      <button id="export-json-btn">Exporter le graphe (JSON)</button>
+      <div id="status-msg"></div>
+    </section>
+
+    <section>
+      <canvas id="graph-canvas" width="800" height="600"></canvas>
+      <div id="node-info" class="node-info"></div>
+      <div id="latency-info" class="node-info"></div>
+      <div id="legend" class="legend"></div>
+    </section>
+  </main>
+
+  <script src="js/ui/state.js"></script>
+  <script src="js/core/nip19.js"></script>
+  <script src="js/core/nostr.js"></script>
+  <script src="js/core/graph.js"></script>
+  <script src="js/net/relays.js"></script>
+  <script src="js/net/req.js"></script>
+  <script src="js/ui/dom.js"></script>
+  <script src="js/ui/canvas.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
